@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package shimkin.lab5;
 
 /**
- *
- * @author User
+ * Реализация интерфейса SomeOtherInterface
  */
-public class SODoer {
-    
+public class SODoer implements SomeOtherInterface {
+    public void doSomeOther(){
+        System.out.println("C");
+    }
 }

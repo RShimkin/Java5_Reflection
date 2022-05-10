@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package shimkin.lab5;
 
 /**
- *
- * @author User
+ * Класс с полями типа интерфейсов SomeInterface и SomeOtherInterface,
+ * помеченными аннотацией @AutoInjectable
  */
 public class SomeBean {
+    @AutoInjectable
+    private SomeInterface field1;
     
+    @AutoInjectable
+    private SomeOtherInterface field2;
+    
+    public void foo(){
+        field1.doSomething();
+        field2.doSomeOther();
+    }
 }

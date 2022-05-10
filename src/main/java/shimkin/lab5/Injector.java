@@ -15,7 +15,6 @@ public class Injector {
     FileReader file = null;
     
     public Injector() throws FileNotFoundException, IOException {
-        file = new FileReader(".properties");
-        props.load(file);
+        props.load(new FileReader(".properties"));
     }
 }

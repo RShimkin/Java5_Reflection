@@ -8,8 +8,7 @@ import java.lang.reflect.Field;
 import java.util.Properties;
 
 /**
- *
- * @author User
+ * Класс инъекции зависимостей
  */
 public class Injector {
     Properties props = new Properties();
